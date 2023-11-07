@@ -1,10 +1,12 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block content %}
-    <h1>Add a Word</h1>
+    <h1>Add Word to Dictionary</h1>
     <form method="post">
         {% csrf_token %}
         {{ form.as_p }}
-        <button type="submit">Add Word</button>
+        <br>
+        <a href="{% url 'web:search' %}"><button type="submit">Add Word</button></a>
     </form>
 {% endblock %}

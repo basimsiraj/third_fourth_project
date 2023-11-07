@@ -16,6 +16,10 @@
                  <p>Definition: {{ word.definition }}</p>
              </li>
              <li style="list-style: none;">
+                <p>Synonyms: {{ word.synonymns }}</p>
+            </li>
+             </li>
+             <li style="list-style: none;">
                  <a href="{% url 'web:update_word' word.id %}"><button>Update Word</button></a>
              </li>
          {% endfor %}

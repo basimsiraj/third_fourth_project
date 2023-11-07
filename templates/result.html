@@ -3,22 +3,22 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Word Search Results</title>
     </head>
     <body>
         <div>
             <ul>
-        
-                {% for instances in Word %}
+                {% for word_instance in results %}
                 <li>
-                    <h2>Word : {{instances.Word}}</h2>
+                    <h2>Word: {{ word_instance.word }}</h2>
                     <br>
-                    <h3>Definition : {{instances.definition}}</h3>
+                    <h3>Definition: {{ word_instance.definition }}</h3>
+                    <br>
+                    <h3>Synonyms: {{ word_instance.synonymns }}</h3>
+                    <br>
                 </li>
                 {% endfor %}
             </ul>
-        </div>
-        <div>
         </div>
     </body>
 </html>
