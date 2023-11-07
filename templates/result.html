@@ -10,11 +10,11 @@
             <ul>
                 {% for word_instance in results %}
                 <li>
-                    <h2>Word: {{ word_instance.word }}</h2>
+                    <h2 class="word">Word : {{ word_instance.word }}</h2>
                     <br>
-                    <h3>Definition: {{ word_instance.definition }}</h3>
+                    <h3 class="definition">Definition : {{ word_instance.definition }}</h3>
                     <br>
-                    <h3>Synonyms: {{ word_instance.synonymns }}</h3>
+                    <h3 class="synonymns">Synonyms : {{ word_instance.synonymns }}</h3>
                     <br>
                 </li>
                 {% endfor %}

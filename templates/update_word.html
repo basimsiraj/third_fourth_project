@@ -1,10 +1,10 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <h1>Edit Word: {{ word.word }}</h1>
+    <h1 class="edit-word">Edit Word : {{ word.word }}</h1>
     <form method="post">
         {% csrf_token %}
         {{ form.as_p }}
-        <button type="submit">Update Word</button>
+        <button type="submit" class="update-button">Update Word</button>
     </form>
 {% endblock %}

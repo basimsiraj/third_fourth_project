@@ -1,0 +1,123 @@
+h1.search-heading {
+    text-align: center;
+    margin-bottom: 73px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+form {
+    margin: 20px 26px;
+}
+form input.search-form {
+    width: 40%;
+    padding: 9px 12px;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+form button.search-button {
+    color: #fff;
+    background-color: blue;
+    font-size: 22px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 22px;
+    cursor: pointer;
+}
+a button.add-button {
+    color: #fff;
+    background-color: blue;
+    font-size: 22px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 10px;
+    border: none;
+    padding: 6px 12px;
+    margin-left: 26px;
+    cursor: pointer;
+}
+p.no-word-found {
+    margin-left: 30px;
+    font-size: 22px;
+    color: red;
+}
+h1.word-heading {
+    text-align: center;
+    margin-bottom: 70px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+a button.add-word {
+    color: #fff;
+    background-color: blue;
+    font-size: 22px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 10px;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+ul {
+    list-style: none;
+    padding-left: 27px;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+.word {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.definition {
+    font-size: 20px;
+}
+
+.synonyms {
+    font-size: 18px;
+}
+form.add-word-form {
+    font-size: 24px;
+}
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+input[type="text"] {
+    width: 50%;
+    border-radius: 10px;
+    padding: 6px 12px;
+    font-size: 16px;
+}
+textarea {
+    width: 50%;
+    border-radius: 10px;
+    padding: 6px 12px;
+    font-size: 16px;
+}
+p.search-word {
+    font-size: 23px;
+}
+p.search-definition {
+    font-size: 23px;
+}
+p.search-synonymns {
+    font-size: 23px;
+}
+button.update-button {
+    color: #fff;
+    background-color: blue;
+    font-size: 22px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 10px;
+    margin-top: 20px;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+h1.edit-word {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

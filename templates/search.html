@@ -1,32 +1,32 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-     <h1>Dictionary Search</h1>
+     <h1 class="search-heading">Dictionary Search</h1>
      <form method="get">
-         <input type="text" name="q" placeholder="Search for a word" value="{{ query }}">
-         <button type="submit">Search</button>
+         <input type="text" name="q" placeholder="Search for a word" value="{{ query }}" class="search-form">
+         <button type="submit" class="search-button">Search</button>
      </form>
      {% if results %}
      <ul>
          {% for word in results %}
-             <li style="list-style: none;">
-                 <p>Word: {{ word.word }}</p>
+             <li>
+                 <p class="search-word">Word : {{ word.word }}</p>
              </li>
-             <li style="list-style: none;">
-                 <p>Definition: {{ word.definition }}</p>
+             <li>
+                 <p class="search-definition">Definition : {{ word.definition }}</p>
              </li>
-             <li style="list-style: none;">
-                <p>Synonyms: {{ word.synonymns }}</p>
+             <li>
+                <p class="search-synonymns">Synonymns : {{ word.synonymns }}</p>
             </li>
              </li>
-             <li style="list-style: none;">
-                 <a href="{% url 'web:update_word' word.id %}"><button>Update Word</button></a>
+             <li>
+                 <a href="{% url 'web:update_word' word.id %}"><button class="update-button">Update Word</button></a>
              </li>
          {% endfor %}
     </ul>
     {% elif no_results %}
-        <p>No word found.</p>
+        <p class="no-word-found">No word found</p>
     {% endif %}
     <br />
-    <a href="{% url 'web:add_word' %}"><button>Add Word</button></a>
+    <a href="{% url 'web:add_word' %}"><button class="add-button">Add Word</button></a>
 {% endblock %}

@@ -2,11 +2,11 @@
 {% load static %}
 
 {% block content %}
-    <h1>Add Word to Dictionary</h1>
-    <form method="post">
+    <h1 class="word-heading">Add Word to Dictionary</h1>
+    <form method="post" class="add-word-form">
         {% csrf_token %}
         {{ form.as_p }}
         <br>
-        <a href="{% url 'web:search' %}"><button type="submit">Add Word</button></a>
+        <a href="{% url 'web:search' %}"><button type="submit" class="add-word">Add Word</button></a>
     </form>
 {% endblock %}
